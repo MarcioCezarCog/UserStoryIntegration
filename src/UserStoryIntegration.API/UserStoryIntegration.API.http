@@ -1,0 +1,6 @@
+@UserStoryIntegration.API_HostAddress = http://localhost:5171
+
+GET {{UserStoryIntegration.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
