@@ -2,6 +2,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
+using OpenAI;
 using UserStoryIntegration.Application.Interfaces;
 
 namespace UserStoryIntegration.Application.Services
@@ -15,7 +16,7 @@ namespace UserStoryIntegration.Application.Services
         private readonly ILogger<KernelService> _logger;
 
         // Valores de configuração padrão se não forem especificados no appsettings.json
-        private const string DEFAULT_MODEL = "llama-3.3-70b-versatile"; 
+        private const string DEFAULT_MODEL = "llama-3.3-70b-versatile";
         private const string DEFAULT_ENDPOINT = "https://api.groq.com/openai/v1";
         private static string DEFAULT_API_KEY = "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";
 
@@ -43,21 +44,13 @@ namespace UserStoryIntegration.Application.Services
                 _logger.LogInformation("Criando kernel com modelo {ModelName} no endpoint {Endpoint}", modelName, endpoint);
 
                 // Configurar o cliente OpenAI com endpoint personalizado
-                var openAIOptions = new OpenAIClientOptions
-                {
-                    ApiKey = apiKey,
-                    Organization = null,
-                    BaseUri = new Uri(endpoint)
-                };
-                
-                // Criar o kernel com a API atualizada do Semantic Kernel
                 var builder = Kernel.CreateBuilder();
-                
-                // Adicionar chat completion com a sintaxe correta e opções
+
                 builder.AddOpenAIChatCompletion(
-                    modelId: modelName, 
-                    options: openAIOptions);
-                
+                    modelId: modelName,
+                    apiKey: apiKey,
+                    endpoint: new Uri(endpoint));
+
                 return builder.Build();
             }
             catch (Exception ex)
