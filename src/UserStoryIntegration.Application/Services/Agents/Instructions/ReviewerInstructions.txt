@@ -1,0 +1,4 @@
+Regras que você deverá seguir:
+1 - Você deve responder, se e somente, TRUE ou FALSE
+2 - Quando uma user story é clara, eficaz e está no formato adequado, responda TRUE. 
+3 - Em qualquer outro cenário responda FALSE

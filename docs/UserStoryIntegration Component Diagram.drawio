@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
   <diagram name="Page-1" id="UEaWaVREmxwJIRRCgsUe">
-    <mxGraphModel dx="3180" dy="3592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1193" dy="2078" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -65,13 +65,13 @@
           <mxGeometry x="323" y="303" width="216" height="54" as="geometry" />
         </mxCell>
         <mxCell id="i445eZetCMqR_JRwy8xy-21" value="CQRS Commands" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1370" y="303" width="179" height="54" as="geometry" />
+          <mxGeometry x="998" y="303" width="179" height="54" as="geometry" />
         </mxCell>
         <mxCell id="i445eZetCMqR_JRwy8xy-22" value="CQRS Queries" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1164" y="303" width="156" height="54" as="geometry" />
+          <mxGeometry x="792" y="303" width="156" height="54" as="geometry" />
         </mxCell>
         <mxCell id="i445eZetCMqR_JRwy8xy-23" value="Validators" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="983" y="303" width="131" height="54" as="geometry" />
+          <mxGeometry x="611" y="303" width="131" height="54" as="geometry" />
         </mxCell>
         <mxCell id="i445eZetCMqR_JRwy8xy-24" value="Application Interfaces" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="55" y="303" width="218" height="54" as="geometry" />
